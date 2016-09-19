@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0732A5B71D8CC838002D75F9 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0732A5B61D8CC838002D75F9 /* Minecraft.ttf */; };
+		0732A5B91D8CCE2F002D75F9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0732A5B81D8CCE2F002D75F9 /* Character.swift */; };
+		0732A5BB1D8CD641002D75F9 /* Soldier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0732A5BA1D8CD641002D75F9 /* Soldier.swift */; };
+		0732A5BD1D8CD64B002D75F9 /* Orc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0732A5BC1D8CD64B002D75F9 /* Orc.swift */; };
 		07DC9E4F1D8BA36B0060380B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC9E4E1D8BA36B0060380B /* AppDelegate.swift */; };
 		07DC9E511D8BA36B0060380B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC9E501D8BA36B0060380B /* ViewController.swift */; };
 		07DC9E541D8BA36B0060380B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DC9E521D8BA36B0060380B /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0732A5B61D8CC838002D75F9 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		0732A5B81D8CCE2F002D75F9 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		0732A5BA1D8CD641002D75F9 /* Soldier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Soldier.swift; sourceTree = "<group>"; };
+		0732A5BC1D8CD64B002D75F9 /* Orc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orc.swift; sourceTree = "<group>"; };
 		07DC9E4B1D8BA36B0060380B /* rpgapp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rpgapp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DC9E4E1D8BA36B0060380B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DC9E501D8BA36B0060380B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,12 +105,16 @@
 		07DC9E4D1D8BA36B0060380B /* rpgapp2 */ = {
 			isa = PBXGroup;
 			children = (
+				0732A5B61D8CC838002D75F9 /* Minecraft.ttf */,
 				07DC9E4E1D8BA36B0060380B /* AppDelegate.swift */,
 				07DC9E501D8BA36B0060380B /* ViewController.swift */,
 				07DC9E521D8BA36B0060380B /* Main.storyboard */,
 				07DC9E551D8BA36B0060380B /* Assets.xcassets */,
 				07DC9E571D8BA36B0060380B /* LaunchScreen.storyboard */,
 				07DC9E5A1D8BA36B0060380B /* Info.plist */,
+				0732A5B81D8CCE2F002D75F9 /* Character.swift */,
+				0732A5BA1D8CD641002D75F9 /* Soldier.swift */,
+				0732A5BC1D8CD64B002D75F9 /* Orc.swift */,
 			);
 			path = rpgapp2;
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 			files = (
 				07DC9E591D8BA36B0060380B /* LaunchScreen.storyboard in Resources */,
 				07DC9E561D8BA36B0060380B /* Assets.xcassets in Resources */,
+				0732A5B71D8CC838002D75F9 /* Minecraft.ttf in Resources */,
 				07DC9E541D8BA36B0060380B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0732A5B91D8CCE2F002D75F9 /* Character.swift in Sources */,
 				07DC9E511D8BA36B0060380B /* ViewController.swift in Sources */,
+				0732A5BB1D8CD641002D75F9 /* Soldier.swift in Sources */,
+				0732A5BD1D8CD64B002D75F9 /* Orc.swift in Sources */,
 				07DC9E4F1D8BA36B0060380B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +500,7 @@
 				07DC9E751D8BA36C0060380B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07DC9E761D8BA36C0060380B /* Build configuration list for PBXNativeTarget "rpgapp2Tests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +509,7 @@
 				07DC9E781D8BA36C0060380B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07DC9E791D8BA36C0060380B /* Build configuration list for PBXNativeTarget "rpgapp2UITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +518,7 @@
 				07DC9E7B1D8BA36C0060380B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
