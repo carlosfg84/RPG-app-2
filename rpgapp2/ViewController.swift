@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -26,9 +27,40 @@ class ViewController: UIViewController {
     var orc: Orc!
     var timer1: NSTimer = NSTimer()
     var timer2: NSTimer = NSTimer()
+    
+    var hitSound: AVAudioPlayer!
+    var fightSound: AVAudioPlayer!
+    var defeatSound: AVAudioPlayer!
+    var bgSound: AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let pathHit = NSBundle.mainBundle().pathForResource("Hit", ofType: "mp3")
+        let hitURL = NSURL(fileURLWithPath: pathHit!)
+        
+        let pathFight = NSBundle.mainBundle().pathForResource("Fight", ofType: "mp3")
+        let fightURL = NSURL(fileURLWithPath: pathFight!)
+        
+        let pathDefeat = NSBundle.mainBundle().pathForResource("Defeat", ofType: "mp3")
+        let defeatURL = NSURL(fileURLWithPath: pathDefeat!)
+        
+        let pathBg = NSBundle.mainBundle().pathForResource("Guile_Theme", ofType: "mp3")
+        let bgURL = NSURL(fileURLWithPath: pathBg!)
+        
+        do{
+            try bgSound = AVAudioPlayer(contentsOfURL: bgURL)
+            try defeatSound = AVAudioPlayer(contentsOfURL: defeatURL)
+            try fightSound = AVAudioPlayer(contentsOfURL: fightURL)
+            try hitSound = AVAudioPlayer(contentsOfURL: hitURL)
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
+//        if bgSound.playing {
+//            bgSound.stop()
+//        }
+//        bgSound.play()
         
         startGame()
         
@@ -40,6 +72,9 @@ class ViewController: UIViewController {
     }
     
     func startGame() {
+        defeatSound.stop()
+        bgSound.play()
+        fightSound.play()
         p1EnableButton()
         p2EnableButton()
         restartBtn.hidden = true
@@ -92,6 +127,11 @@ class ViewController: UIViewController {
     
     @IBAction func attackOnePressed(sender: AnyObject) {
         
+        if hitSound.playing {
+            hitSound.stop()
+        }
+        hitSound.play()
+        
         playerTwoAttckBtn.enabled = false
         
         soldier.attemptAttack(orc.attackPower)
@@ -99,6 +139,8 @@ class ViewController: UIViewController {
         if soldier.isAlive {
             playerTwoHpLbl.text = "\(soldier.hp) HP"
         } else {
+            bgSound.stop()
+            defeatSound.play()
             statusLbl.text = orc.name + " WON!"
             playerTwoImg.hidden = true
             playerTwoAttckBtn.hidden = true
@@ -116,6 +158,11 @@ class ViewController: UIViewController {
     
     @IBAction func attackTwoPressed(sender: AnyObject) {
         
+        if hitSound.playing {
+            hitSound.stop()
+        }
+        hitSound.play()
+        
         playerOneAttckBtn.enabled = false
         
         orc.attemptAttack(soldier.attackPower)
@@ -123,6 +170,8 @@ class ViewController: UIViewController {
         if orc.isAlive {
             playerOneHpLbl.text = "\(orc.hp) HP"
         } else {
+            bgSound.stop()
+            defeatSound.play()
             statusLbl.text = soldier.name + " WON!"
             playerOneImg.hidden = true
             playerOneAttckBtn.hidden = true

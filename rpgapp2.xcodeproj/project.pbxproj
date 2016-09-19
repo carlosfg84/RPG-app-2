@@ -11,6 +11,10 @@
 		0732A5B91D8CCE2F002D75F9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0732A5B81D8CCE2F002D75F9 /* Character.swift */; };
 		0732A5BB1D8CD641002D75F9 /* Soldier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0732A5BA1D8CD641002D75F9 /* Soldier.swift */; };
 		0732A5BD1D8CD64B002D75F9 /* Orc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0732A5BC1D8CD64B002D75F9 /* Orc.swift */; };
+		0756C8A11D8F7121002E7CF4 /* Hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0756C89D1D8F7121002E7CF4 /* Hit.mp3 */; };
+		0756C8A21D8F7121002E7CF4 /* Fight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0756C89E1D8F7121002E7CF4 /* Fight.mp3 */; };
+		0756C8A31D8F7121002E7CF4 /* Defeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0756C89F1D8F7121002E7CF4 /* Defeat.mp3 */; };
+		0756C8A41D8F7121002E7CF4 /* Guile_Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0756C8A01D8F7121002E7CF4 /* Guile_Theme.mp3 */; };
 		07DC9E4F1D8BA36B0060380B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC9E4E1D8BA36B0060380B /* AppDelegate.swift */; };
 		07DC9E511D8BA36B0060380B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC9E501D8BA36B0060380B /* ViewController.swift */; };
 		07DC9E541D8BA36B0060380B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DC9E521D8BA36B0060380B /* Main.storyboard */; };
@@ -42,6 +46,10 @@
 		0732A5B81D8CCE2F002D75F9 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		0732A5BA1D8CD641002D75F9 /* Soldier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Soldier.swift; sourceTree = "<group>"; };
 		0732A5BC1D8CD64B002D75F9 /* Orc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orc.swift; sourceTree = "<group>"; };
+		0756C89D1D8F7121002E7CF4 /* Hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hit.mp3; sourceTree = "<group>"; };
+		0756C89E1D8F7121002E7CF4 /* Fight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fight.mp3; sourceTree = "<group>"; };
+		0756C89F1D8F7121002E7CF4 /* Defeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Defeat.mp3; sourceTree = "<group>"; };
+		0756C8A01D8F7121002E7CF4 /* Guile_Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Guile_Theme.mp3; sourceTree = "<group>"; };
 		07DC9E4B1D8BA36B0060380B /* rpgapp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rpgapp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DC9E4E1D8BA36B0060380B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DC9E501D8BA36B0060380B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +113,10 @@
 		07DC9E4D1D8BA36B0060380B /* rpgapp2 */ = {
 			isa = PBXGroup;
 			children = (
+				0756C89D1D8F7121002E7CF4 /* Hit.mp3 */,
+				0756C89E1D8F7121002E7CF4 /* Fight.mp3 */,
+				0756C89F1D8F7121002E7CF4 /* Defeat.mp3 */,
+				0756C8A01D8F7121002E7CF4 /* Guile_Theme.mp3 */,
 				0732A5B61D8CC838002D75F9 /* Minecraft.ttf */,
 				07DC9E4E1D8BA36B0060380B /* AppDelegate.swift */,
 				07DC9E501D8BA36B0060380B /* ViewController.swift */,
@@ -242,7 +254,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DC9E591D8BA36B0060380B /* LaunchScreen.storyboard in Resources */,
+				0756C8A21D8F7121002E7CF4 /* Fight.mp3 in Resources */,
+				0756C8A31D8F7121002E7CF4 /* Defeat.mp3 in Resources */,
 				07DC9E561D8BA36B0060380B /* Assets.xcassets in Resources */,
+				0756C8A11D8F7121002E7CF4 /* Hit.mp3 in Resources */,
+				0756C8A41D8F7121002E7CF4 /* Guile_Theme.mp3 in Resources */,
 				0732A5B71D8CC838002D75F9 /* Minecraft.ttf in Resources */,
 				07DC9E541D8BA36B0060380B /* Main.storyboard in Resources */,
 			);
